@@ -1,0 +1,25 @@
+Authors -- the people behind DNRGPS
+
+
+Lead Programmer:
+
+* Chris Pouliot               
+
+
+Code Contributors:
+
+* Regan Sarwas
+* Greg Massaro
+
+
+Project Manager:
+
+* Shelly Sentyrz
+
+
+Other contributors and helpers:
+
+* Zeb Thomas
+* Mike Tronrud
+* Jackie Brost
+

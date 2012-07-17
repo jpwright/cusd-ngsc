@@ -1,0 +1,24 @@
+DNRGPS Licensing
+================
+
+Copyright (c) 2000-2012 Minnesota Department of Natural Resources (www.mndnr.gov)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Component Licensing
+-------------------
+
+DNRGPS contains several component packages that are provided under their own licensing terms.
+
+
+GDAL -- Refer to the GDAL license found at /DOCUMENTS/GDAL_LICENSE.TXT
+
+GPSBABEL -- Refer to the GPSBABEL license found at /DOCUMENTS/GPSBABEL_LICENSE.TXT
+
+PROJ4 --Refer to the PROJ4 license found at /DOCUMENTS/PROJ4_LICENSE.TXT
+
+ESRI FILE GDB API -- Refer to the ESRI FILE GDB API license found at /DOCUMENTS/FILEGDBAPI_LICENSE.TXT

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dnrgpsproperties>
+  <time>2012-01-03T09:28:05.9073216-06:00</time>
+  <CheckVersion>true</CheckVersion>
+  <GpsBabelExecutable>D:\projects\dnrgps\dnrgps\gpsbabel\gpsbabel.exe</GpsBabelExecutable>
+  <xImageExecutable>C:\Program Files (x86)\Garmin\xImage\xImage.exe</xImageExecutable>
+  <!--Items below relate to GPS Model and Connections-->
+  <gpsMake></gpsMake>
+  <gpsPort></gpsPort>
+  <gpsBaudRate>9600</gpsBaudRate>
+  <gpsNoAck>True</gpsNoAck>
+
+  <!--GPX Extension Namespaces-->
+  <gpxExtensionNamespaces>
+    <namespace>h</namespace>  	<!-- Hummingbird -->
+    <namespace>gpxx</namespace> <!-- Garmin -->
+    <namespace>gpxtrx</namespace> <!-- Garmin Track -->
+    <namespace>gpxtpx</namespace> <!-- Garmin Track Point -->
+    <namespace>ogr</namespace>  <!-- GDAL/OGR -->
+  </gpxExtensionNamespaces>
+  <!--Field definitions for the Waypoint Table-->
+  <waypointFields>
+    <field gpxtag="type" required="true" visible="true" precision="0" length="10" type="string" name="type" />
+    <field gpxtag="name" required="true" visible="true" precision="0" length="24" type="string" name="ident" />
+    <field gpxtag="lat" required="true" visible="true" precision="8" length="18" type="number" alias="Latitude" name="lat" />
+    <field gpxtag="lon" required="true" visible="true" precision="8" length="18" type="number" alias="Longitude" name="long" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="y_proj" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="x_proj" />
+    <field gpxtag="cmt" visible="true" precision="0" length="254" type="string" name="comment" />
+    <field gpxtag="DisplayMode" visible="true" precision="0" length="10" type="string" name="display" />
+    <field gpxtag="sym" visible="true" precision="0" length="10" type="string" name="symbol" />
+    <field visible="true" precision="2" length="12" type="number" name="dist" />
+    <field gpxtag="Proximity" visible="true" precision="0" length="10" type="string" name="proximity" />
+    <field visible="true" precision="0" length="10" type="string" name="color" />
+    <field gpxtag="ele" visible="true" precision="2" length="12" type="number" name="altitude" />
+    <field gpxtag="Depth" visible="true" precision="2" length="12" type="number" name="depth" />
+    <field gpxtag="Temperature" visible="true" precision="2" length="12" type="number" name="temp" />
+    <field gpxtag="time" visible="true" precision="0" length="20" type="string" name="time" />
+    <field visible="true" precision="0" length="10" type="string" name="wpt_class" />
+    <field visible="true" precision="0" length="10" type="string" name="sub_class" />
+    <field visible="true" precision="0" length="10" type="string" name="attrib" />
+    <field visible="true" precision="0" length="254" type="string" name="link" />
+    <field gpxtag="State" visible="true" precision="0" length="15" type="string" name="state" />
+    <field gpxtag="Country" visible="true" precision="0" length="15" type="string" name="country" />
+    <field gpxtag="City" visible="true" precision="0" length="15" type="string" name="city" />
+    <field gpxtag="StreetAddress" visible="true" precision="0" length="15" type="string" name="address" />
+    <field gpxtag="PostalCode" visible="true" precision="0" length="15" type="string" name="zip" />
+    <field visible="true" precision="0" length="15" type="string" name="facility" />
+    <field visible="true" precision="0" length="15" type="string" name="crossroad" />
+    <field visible="true" precision="0" length="10" type="string" name="ete" />
+    <field visible="true" precision="0" length="10" type="string" name="dtype" />
+    <field gpxtag="src" visible="true" precision="0" length="20" type="string" name="model" />
+    <field visible="true" precision="0" length="254" type="string" name="filename" />
+    <field visible="true" precision="0" length="20" type="string" name="ltime" />
+    <field gpxtag="magvar" visible="true" precision="2" length="10" type="number" name="magvar" />
+    <field gpxtag="geoidheight" visible="true" precision="2" length="10" type="number" name="geoidheight" />
+    <field gpxtag="desc" visible="true" precision="0" length="254" type="string" name="desc" />
+    <field gpxtag="fix" visible="true" precision="0" length="5" type="string" name="fix" />
+    <field gpxtag="sat" visible="true" precision="0" length="5" type="number" name="sat" />
+    <field gpxtag="hdop" visible="true" precision="2" length="5" type="number" name="hdop" />
+    <field gpxtag="vdop" visible="true" precision="2" length="5" type="number" name="vdop" />
+    <field gpxtag="pdop" visible="true" precision="2" length="5" type="number" name="pdop" />
+    <field gpxtag="ageofdgpsdata" visible="true" precision="0" length="10" type="number" name="ageofdgpsdata" />
+    <field gpxtag="dgpsid" visible="true" precision="0" length="4" type="number" name="dgpsid" />
+    <field visible="true" precision="0" length="10" type="string" name="dir" />
+  </waypointFields>
+  <!--Field definitions for the Track Table-->
+  <trackFields>
+    <field gpxtag="type" required="true" visible="true" precision="0" length="10" type="string" name="type" />
+    <field gpxtag="track_name" required="true" visible="true" precision="0" length="24" type="string" name="tident" />
+    <field gpxtag="name" required="true" visible="true" precision="0" length="24" type="string" name="ident" />
+    <field gpxtag="lat" required="true" visible="true" precision="8" length="18" type="number" alias="Latitude" name="lat" />
+    <field gpxtag="lon" required="true" visible="true" precision="8" length="18" type="number" alias="Longitude" name="long" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="y_proj" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="x_proj" />
+    <field gpxtag="cmt" visible="true" precision="0" length="254" type="string" name="comment" />
+    <field required="true" visible="true" precision="0" length="10" type="string" name="new_trk" />
+    <field required="true" visible="true" precision="0" length="10" type="string" name="new_seg" />
+    <field visible="true" precision="0" length="10" type="string" name="display" />
+    <field visible="true" precision="0" length="10" type="string" name="color" />
+    <field gpxtag="ele" visible="true" precision="2" length="12" type="number" name="altitude" />
+    <field visible="true" precision="2" length="12" type="number" name="depth" />
+    <field visible="true" precision="2" length="12" type="number" name="temp" />
+    <field gpxtag="time" visible="true" precision="0" length="20" type="string" name="time" />
+    <field visible="true" precision="0" length="20" type="string" name="model" />
+    <field visible="true" precision="0" length="254" type="string" name="filename" />
+    <field visible="true" precision="0" length="20" type="string" name="ltime" />
+    <field gpxtag="desc" visible="true" precision="0" length="254" type="string" name="desc" />
+    <field gpxtag="link" visible="true" precision="0" length="254" type="string" name="link" />
+  </trackFields>
+  <!--Field definitions for the Route Table-->
+  <routeFields>
+    <field gpxtag="type" required="true" visible="true" precision="0" length="10" type="string" name="type" />
+    <field gpxtag="route_name" required="true" visible="true" precision="0" length="24" type="string" name="rident" />
+    <field gpxtag="name" required="true" visible="true" precision="0" length="24" type="string" name="ident" />
+    <field gpxtag="lat" required="true" visible="true" precision="8" length="18" type="number" alias="Latitude" name="lat" />
+    <field gpxtag="lon" required="true" visible="true" precision="8" length="18" type="number" alias="Longitude" name="long" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="y_proj" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="x_proj" />
+    <field required="true" visible="true" precision="0" length="10" type="string" name="new_seg" />
+    <field gpxtag="number" visible="true" precision="0" length="12" type="string" name="rnumber" />
+    <field gpxtag="cmt" visible="true" precision="0" length="10" type="string" name="rcmnt" />
+    <field gpxtag="desc" visible="true" precision="0" length="10" type="string" name="rdesc" />
+    <field gpxtag="link" visible="true" precision="0" length="10" type="string" name="rlink" />
+    <field visible="true" precision="0" length="12" type="string" name="rtype" />
+    <field gpxtag="cmt" visible="true" precision="0" length="254" type="string" name="comment" />
+    <field gpxtag="DisplayMode" visible="true" precision="0" length="10" type="string" name="display" />
+    <field gpxtag="sym" visible="true" precision="0" length="10" type="string" name="symbol" />
+    <field visible="true" precision="2" length="12" type="number" name="dist" />
+    <field gpxtag="Proximity" visible="true" precision="0" length="10" type="string" name="proximity" />
+    <field visible="true" precision="0" length="10" type="string" name="color" />
+    <field gpxtag="ele" visible="true" precision="2" length="12" type="number" name="altitude" />
+    <field gpxtag="Depth" visible="true" precision="2" length="12" type="number" name="depth" />
+    <field gpxtag="Temperature" visible="true" precision="2" length="12" type="number" name="temp" />
+    <field gpxtag="time" visible="true" precision="0" length="20" type="string" name="time" />
+    <field visible="true" precision="0" length="10" type="string" name="wpt_class" />
+    <field visible="true" precision="0" length="10" type="string" name="sub_class" />
+    <field visible="true" precision="0" length="10" type="string" name="attrib" />
+    <field gpxtag="State" visible="true" precision="0" length="15" type="string" name="state" />
+    <field gpxtag="Country" visible="true" precision="0" length="15" type="string" name="country" />
+    <field gpxtag="City" visible="true" precision="0" length="15" type="string" name="city" />
+    <field gpxtag="StreetAddress" visible="true" precision="0" length="15" type="string" name="address" />
+    <field gpxtag="PostalCode" visible="true" precision="0" length="15" type="string" name="zip" />
+    <field visible="true" precision="0" length="15" type="string" name="facility" />
+    <field visible="true" precision="0" length="15" type="string" name="crossroad" />
+    <field visible="true" precision="0" length="10" type="string" name="ete" />
+    <field visible="true" precision="0" length="10" type="string" name="dtype" />
+    <field visible="true" precision="0" length="254" type="string" name="filename" />
+    <field visible="true" precision="0" length="20" type="string" name="ltime" />
+    <field gpxtag="magvar" visible="true" precision="2" length="10" type="number" name="magvar" />
+    <field gpxtag="geoidheight" visible="true" precision="2" length="10" type="number" name="geoidheight" />
+    <field gpxtag="desc" visible="true" precision="0" length="254" type="string" name="desc" />
+    <field gpxtag="src" visible="true" precision="0" length="20" type="string" name="model" />
+    <field gpxtag="fix" visible="true" precision="0" length="5" type="string" name="fix" />
+    <field gpxtag="sat" visible="true" precision="0" length="5" type="number" name="sat" />
+    <field gpxtag="hdop" visible="true" precision="2" length="5" type="number" name="hdop" />
+    <field gpxtag="vdop" visible="true" precision="2" length="5" type="number" name="vdop" />
+    <field gpxtag="pdop" visible="true" precision="2" length="5" type="number" name="pdop" />
+    <field gpxtag="ageofdgpsdata" visible="true" precision="0" length="10" type="number" name="ageofdgpsdata" />
+    <field gpxtag="dgpsid" visible="true" precision="0" length="4" type="number" name="dgpsid" />
+  </routeFields>
+  <!--Field definitions for the RealTime Table-->
+  <realTimeFields>
+    <field gpxtag="type" required="true" visible="true" precision="0" length="10" type="string" name="type" />
+    <field gpxtag="name" required="true" visible="true" precision="0" length="24" type="string" name="ident" />
+    <field gpxtag="lat" required="true" visible="true" precision="8" length="18" type="number" alias="Latitude" name="lat" />
+    <field gpxtag="lon" required="true" visible="true" precision="8" length="18" type="number" alias="Longitude" name="long" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="y_proj" />
+    <field required="true" visible="true" precision="8" length="18" type="number" name="x_proj" />
+    <field gpxtag="cmt" visible="true" precision="0" length="254" type="string" name="comment" />
+    <field gpxtag="ele" visible="true" precision="2" length="12" type="number" name="altitude" />
+    <field visible="true" precision="2" length="10" type="number" name="epe" />
+    <field visible="true" precision="2" length="10" type="number" name="eph" />
+    <field visible="true" precision="2" length="10" type="number" name="epv" />
+    <field gpxtag="hdop" visible="true" precision="2" length="5" type="number" name="hdop" />
+    <field gpxtag="vdop" visible="true" precision="2" length="5" type="number" name="vdop" />
+    <field gpxtag="pdop" visible="true" precision="2" length="5" type="number" name="pdop" />
+    <field visible="true" precision="2" length="10" type="number" name="speed" />
+    <field visible="true" precision="2" length="10" type="number" name="course" />
+    <field visible="true" precision="2" length="10" type="number" name="mvar" />
+    <field visible="true" precision="2" length="10" type="number" name="mdir" />
+    <field visible="true" precision="0" length="20" type="string" name="datum" />
+    <field visible="true" precision="0" length="10" type="number" name="pfix" />
+    <field visible="true" precision="0" length="10" type="string" name="east" />
+    <field visible="true" precision="0" length="10" type="string" name="north" />
+    <field visible="true" precision="2" length="10" type="number" name="up" />
+    <field gpxtag="Depth" visible="true" precision="2" length="12" type="number" name="depth" />
+    <field gpxtag="Temperature" visible="true" precision="2" length="12" type="number" name="temp" />
+    <field gpxtag="time" visible="true" precision="0" length="20" type="string" name="time" />
+    <field visible="true" precision="0" length="255" type="string" name="filename" />
+    <field visible="true" precision="0" length="20" type="string" name="ltime" />
+  </realTimeFields>
+  <!--Items for calculating/converting units-->
+  <areaUnits>Square Miles</areaUnits>
+  <areaMultiplier>1</areaMultiplier>
+  <lengthUnits>Miles</lengthUnits>
+  <lengthMultiplier>1</lengthMultiplier>
+  <altitudeUnits>Meters</altitudeUnits>
+  <altitudeMultiplier>1</altitudeMultiplier>
+  <depthUnits>Meters</depthUnits>
+  <depthMultiplier>1</depthMultiplier>
+  <timeZone>Local Computer Time</timeZone>
+  <!--Items below relate to Real-Time Tracking properties-->
+  <rtAutoPanEnabled>True</rtAutoPanEnabled>
+  <rtAutoPanWindowPercent>75</rtAutoPanWindowPercent>
+  <rtGraphicsEnabled>True</rtGraphicsEnabled>
+  <rtToleranceDistanceEnabled>False</rtToleranceDistanceEnabled>
+  <rtToleranceDistanceValue>5</rtToleranceDistanceValue>
+  <rtToleranceTimeEnabled>True</rtToleranceTimeEnabled>
+  <rtToleranceTimeValue>3</rtToleranceTimeValue>
+  <rtTrackUp>False</rtTrackUp>
+  <rtNMEA enabled="false" path="">
+  </rtNMEA>
+  <!--Items below relate to Hotlinking-->
+  <hotlinkCalibration>0:0:00</hotlinkCalibration>
+  <hotlinkThreshold>0:0:00</hotlinkThreshold>
+  <!--Items below relate to Projections-->
+  <projections viewonlyfavorites="false">
+    <projection posc="4326" datum="WGS 84" projname="No Projection" projdescription="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs  &lt;&gt;" default="true" />
+    <projection posc="26915" datum="NAD83" projname="UTM zone 15N" projdescription="+proj=utm +zone=15 +ellps=GRS80 +datum=NAD83 +units=m +towgs84=-0.991,1.9072,0.5129,0.02579,0.00965,0.01166,0 +no_defs  no_defs &lt;&gt;" default="false" />
+  </projections>
+  <!--Items below relate to File Types to save to.-->
+  <fileTypes>
+    <fileType gdaltype="ESRI Shapefile" suffix="shp" description="ESRI Shapefile" filter="*.shp" visible="true" default="false" />
+    <fileType gdaltype="KML" suffix="kml" description="Google Keyhole Markup Language" filter="*.kml" visible="true" default="false" />
+    <fileType gdaltype="GPX" suffix="gpx" description="GPS Exchange Format" filter="*.gpx" visible="true" default="false" />
+    <fileType delimiter="," suffix="txt" description="Text file (comma-delimited)" filter="*.txt" visible="true" default="false" />
+    <fileType delimiter="\t" suffix="txt" description="Text file (tab-delimited)" filter="*.txt" visible="true" default="true" />
+    <fileType gdaltype="MapInfo File" suffix="map" description="Mapinfo File" filter="*.map" visible="true" default="false" />
+    <fileType gdaltype="GML" suffix="gml" description="Geography Markup Language" filter="*.gml" visible="true" default="false" />
+    <fileType gdaltype="GeoJSON" suffix="geojson" description="Geo JavaScript Object Notation" filter="*.geojson" visible="true" default="false" />
+  </fileTypes>
+  <!--Items below relate to Database Types to save to.-->
+  <databaseTypes>
+    <fileType gdaltype="PostgreSQL" prefix="PG:" dbname="true" host="true" port="true" user="true" password="true" description="PostgreSQL for PostGIS" visible="true" />
+    <fileType gdaltype="FileGDB" folderPath="true" description="ESRI File Geodatabase (v10.x)" visible="true" />
+    <fileType gdaltype="KML" filePath="true" description="Google Keyhole Markup Language" visible="true" />
+  </databaseTypes>
+  <!--Items below are saved database connections-->
+  <databaseConnections>
+  </databaseConnections>
+</dnrgpsproperties>

@@ -1,0 +1,29 @@
+DNRGPS Known Functionality Gaps and Issues as of 12/29/2011
+
+
+* The following functionality is not yet incorporated:
+	File ->	Load From ->	File - Load From Map Info File
+				Database - SDE
+		Save to ->	Database - SDE 
+				Google Earth --> My Places
+	Edit ->	Find/Replace?
+		Image Links
+			Write Coordinates to Image Header
+			Match Point to Image - Spatially
+		Calculating Length/Area for Tracks
+	Other GPS models?
+	Real-Time Tracking
+		Does not write to TXT, KML, or GPX files
+
+	Documentation for Developers
+	ArcMap--> Export to Image
+
+
+* Known Issues
+	- Unable to append to an existing KML file.  Saving to a KML file overwrites the existing data.  
+		Need to incorporate LibKML.
+	- Functionality only tested with Garmin units.	
+	- Table's Field Properties (length, precision) are not enforced until writing to a file.
+	- Some projections are not supported when saving to File Geodatabase.  The error that returns is 
+		"Failed at Creating table xxxxxx (General function failure)"
+	- Garmin's newest GPX extension schema (v3) is currently not supported.  

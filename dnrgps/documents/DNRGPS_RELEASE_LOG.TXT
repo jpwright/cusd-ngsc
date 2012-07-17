@@ -1,0 +1,141 @@
+RELEASE LOG FOR DNRGPS
+
+3/5/2012 -- Verison 6.0.0.11 RELEASE
+    ADDITIONAL FUNCTIONALITY AND NOTES
+	Added TIDENT field to Tracks.  I came to the realization that tracks in GPX files can 
+		contain a name for a given track as well as a name for each point within that track.
+		So now, the TIDENT field contains the name of the track.  The IDENT field in the track 
+		table contains a unique ID for each track point.  It works similarly to the RIDENT field 
+		for routes.
+
+    BUG FIXES - more details found at http://www.assembla.com/spaces/dnrgps/tickets 
+	#97 -- Uploaded track loeses geometry
+	#126 -- Uploading Route creates empty GPX on Garmin
+	#127 -- Track download has no time data
+	#128 -- Download all vs Download individually
+	#129 -- Trouble writing to KML Tracks
+	#130 -- Enhancement for Multipart track
+	#136 -- Saving to Arcmap Graphics
+	#138 -- Single-part save results in multi-part feature
+	#139 -- Copied/pasted records are in offset columns
+	#140 -- Tracks exported from .shp to .gpx joining up
+	#141 -- Problem opening kml files
+
+2/15/2012 -- Version 6.0.0.8 RELEASE
+    ADDITIONAL FUNCTIONALITY AND NOTES
+	Added GPS -> Connect to Default GPS option which will attempt to connect to the Default Port
+	File -> Save To -> Arcmap -> Graphics
+	File -> Load From -> Arcmap -> Graphics
+	Integrated status bar for loading from and saving to ArcMap.
+	Tweaked Load script to find the proper GPS if multiple GPSs connected.
+	Added Shape types when saving to file/database
+		Instead of Line now have Line and Line (multipart)
+		Instead of Polygon now have Polygon and Polygon (multipart)
+	Added ability to record NMEA strings directly to file (see RealTime->Properties)
+	Added ability to save to a Web Service.  
+		Uses .NET WebClient to perform a Post of a GPX file.  
+		Users need to have a web request already set up on the back end for this to work.
+		For more on the post functionality go to http://msdn.microsoft.com/en-us/library/aa329790%28v=vs.71%29.aspx
+		
+
+    BUG FIXES - more details found at http://www.assembla.com/spaces/dnrgps/tickets
+	#30 -- Upload All bug
+	#31 -- Load from KML
+	#36 -- Loading selected graphic point from Arc not loading
+	#42 -- Beta testing
+	#48 -- No Load/save not connected
+	#51 -- Download all shows cryptic filenames
+	#58 -- GPS connected
+	#62 -- Open KML file problem
+	#63 -- Trouble using DNRGPS Software
+	#65 -- Loading polygon from shapefile only creates tracks
+	#67 -- GPS Download to Wayppoint/Track/Route may result in no data
+	#71 -- USB connection error	
+	#74 -- Default Open Port?
+	#76 -- Uploading Shapefile into Garmin 62s
+	#77 -- Mouse Scroll
+	#88 -- Not reading GPS through serial wire ---- Not populating waypoint attributes
+	#90 -- DNRGPS beta test comments
+	#95 -- Loading text file errors
+	#104 -- Cannot download waypoints through serial connection from Garmin 76s
+	#105 -- Load from ArcMap Layer fails
+	#106 -- Save To ArcMap does not add to current map
+	#108 -- Load from Arcmap - Getting Layer List takes a long time
+	#109 -- changing projection after data download does not reproject x-proj and y-proj values
+	#112 -- 'download all' downloads waypoints as track points
+	#118 -- French language configuration not able to save to lines/polygons
+	#119 -- DNR GPS and Symantec AntiVirus
+	
+
+
+2/2/2012 -- Version 6.0.0.5 BETA
+    BUG FIXES (to be tested by beta folks) - more details found at http://www.assembla.com/spaces/dnrgps/tickets
+	#45 -- KML save to and load from do not sync up
+	#46 -- GeoJSON overwrite does not work
+	#54 -- Can't change rident values for an entire route
+	#57 -- Paste doesn't work
+	#64 -- LoadFrom ArcMap 10 causes error
+	#70 -- French configuration
+	#71 -- USB connection error
+	#72 -- multiple gps connections
+	#73 -- Unable to download from Garmin NUVI
+	#75 -- GPS Connection
+	#78 -- Set Projections to Favorites
+	#80 -- Saving to File: Shapefile
+	#81 -- Load From File: GPX from Garmin 62s
+	#85 -- Selecting Tracks Creating a Tail
+	#86 -- Uploading Tracks: Garmin 76csx
+	#89 -- ident field not selectable when loading shape files
+	#91 -- Time values
+	#92 -- Track upload corrupts track
+	#93 -- Saving to ArcGIS 10 database
+	#95 -- Loading text file errors
+	#96 -- Loading Route files
+	#97 -- Uploaded track loses geometry
+	#98 -- Upload all error
+	#99 -- Oregon 300 Upload All
+	#101 -- Real-time with GPS off
+
+
+
+    ADDITIONAL FUNCTIONALITY AND NOTES
+	Added ArcMap functionality
+		File -> Load From -> ArcMap -> Layer
+		File -> Save To -> ArcMap -> File
+		File -> Save To -> ArcMap -> Database
+		Plotting CEP results to ArcMap
+		Real-Time Tracking plots to ArcMap
+	Paste Button now works
+	Reworked GPX file read/write back end
+	When uploading tracks to an older Garmin (one that doesn't have a drive appear
+		when plugged into a PC) the user is prompted to upload to ACTIVE LOG
+		or to Named Tracks.
+	Added Edit menu options for converting between GPS data types
+		Edit -> Convert Table To -> Waypoints/Tracks/Routes/RealTime
+	NAD83 transformation was not working properly.  Fixed this.
+		
+		
+
+
+
+1/24/2012 -- Version 6.0.0.4 BETA
+    BUG FIXES - more details found at http://www.assembla.com/spaces/dnrgps/tickets
+	#40 -- Download Complete dialog box sometimes shows on wrong monitor
+	#41 -- Duplicate headers in save to text file
+	#43 -- Error setting projection
+	#47 -- Projection of Data
+	#49 -- DNRGPS will not run
+	#50 -- Save route, open route doesn't display correctly
+	#52 -- Download All/Cancel erases current data
+	#55 -- GPS/DownloadAll doubleclick doesn't do anything.
+	#56 -- Cancelling GPS/DownloadAll display "Download Complete"
+	#60 -- load from file
+
+    ADDITIONAL FUNCTIONALITY AND NOTES
+	Added Image Links Functionality (Edit->Add Image Links)
+		Convert Images to Waypoints
+		Match Point to Image via Time Stamps
+	Updates to documentation
+
+1/9/2012 -- Version 6.0.0.3 BETA
+	Initial Beta release
