@@ -1,0 +1,12 @@
+<PAMDataset>
+  <SRS>PROJCS[&quot;Unknown_datum_based_upon_the_custom_spheroid_Sinusoidal&quot;,GEOGCS[&quot;GCS_Unknown_datum_based_upon_the_custom_spheroid&quot;,DATUM[&quot;D_Not_specified_based_on_custom_spheroid&quot;,SPHEROID[&quot;Custom_spheroid&quot;,6371007.181,0.0]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]],PROJECTION[&quot;Sinusoidal&quot;],PARAMETER[&quot;false_easting&quot;,0.0],PARAMETER[&quot;false_northing&quot;,0.0],PARAMETER[&quot;central_meridian&quot;,0.0],UNIT[&quot;Meter&quot;,1.0]]</SRS>
+  <Metadata>
+    <MDI key="DataType">Generic</MDI>
+  </Metadata>
+  <Metadata domain="Esri">
+    <MDI key="PyramidResamplingType">NEAREST</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <NoDataValue>0.00000000000000E+000</NoDataValue>
+  </PAMRasterBand>
+</PAMDataset>
